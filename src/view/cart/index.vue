@@ -16,7 +16,8 @@
         <li v-for="(item,index) in tabData" :key="index">
           <div class="list">
             <h3>{{item.title}}</h3>
-            <span>{{ item.date }}</span>
+            <div>编号：<span>{{ item.date }}</span></div>
+            <div>状态：<span>已开标</span></div>
           </div>
         </li>
       </ul>
@@ -93,10 +94,15 @@ export default {
           font-size: 16px;
           font-weight: normal;
           color: rgb(14,14,14);
+          font-family: "Microsoft Yahei";
+        }
+        div {
+          font-size: 15px;
+          padding-bottom: 5px;
+          color: #4a4a4a;
         }
         span {
-          font-size: 14px;
-          color: #CFCFCF;
+          font-size: 15px;
         }
       }
     }

@@ -22,7 +22,7 @@
     />
     <van-grid :border="false" :column-num="3">
       <van-grid-item>
-        <div class="img">
+        <div class="img" @click="$router.push({name: 'user'})">
           <img src="../../styles/img/syyd_fd_m.png" alt="" />
         </div>
         招标采购
