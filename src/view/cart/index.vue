@@ -13,7 +13,7 @@
         <van-tab title="竞价采购" name="3"></van-tab>
       </van-tabs>
       <ul class="tabList">
-        <li v-for="item in tabData" :key="item.id">
+        <li v-for="(item,index) in tabData" :key="index">
           <div class="list">
             <h3>{{item.title}}</h3>
             <span>{{ item.date }}</span>
